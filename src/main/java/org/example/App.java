@@ -16,12 +16,16 @@ public class App {
             System.out.printf("명령) ");
             String command = sc.nextLine().trim();
 
-            if (command.equals("종료".trim())) {
+            if (command.equals("종료")) {
                 break;
             }
-            if (command.equals("등록")) {
+            else if (command.equals("등록")) {
                 System.out.printf("명언 : ");
+                String content = sc.nextLine().trim();
+                System.out.printf("작가 : ");
+                String authorName = sc.nextLine().trim();
             }
         }
+
     }
 }
