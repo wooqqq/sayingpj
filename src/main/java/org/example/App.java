@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.wiseSaying.entity.WiseSaying;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -41,9 +43,9 @@ public class App {
             } else if (command.equals("목록")) {
                 // System.out.printf("생성된 명언 수 : %d\n", wiseSayings.size());
 
-
                 System.out.println("번호 / 작가 / 명언");
-                System.out.println("-----------------------");
+                System.out.println("-".repeat(20));
+
                 for (int i = wiseSayings.size() - 1; i >= 0; i--) {
                     System.out.println(wiseSayings.get(i).getId() + " / " + wiseSayings.get(i).getAuthorName() + " / " + wiseSayings.get(i).getContent());
                 }
